@@ -20,7 +20,8 @@ class ScrapeTeknikhouse(scraper.Scraper):
     # More details can be found here: https://pypi.org/project/django-easy-scraper/
     xpath_fields = {
         'sku': '/html/head/meta[11]/@content',
+        'price': '/html/head/meta[12]/@content',
+        'title': '/html/head/meta[6]/@content',
     }
 
     
-# <meta property="product:retailer_item_id" content="SKU1108">
