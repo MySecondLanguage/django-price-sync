@@ -1,4 +1,4 @@
-# Price sync with django and regular Expression
+# Price sync for django app
 
 ### Database
 > You can connect any database you want but currently we connected Postgresql
