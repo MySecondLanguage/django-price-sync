@@ -16,7 +16,7 @@ class Switch(switch.BaseSwitch):
     # More details can be found here: https://pypi.org/project/django-easy-scraper/
     switcher = {
         'elgiganten.se': ScrapeElgiganten.regex_url_scraper,
-        # 'teknikhouse.se': ScrapeElgiganten.regex_url_scraper,
+        'teknikhouse.se': ScrapeTeknikhouse.xpath_scraper,
     }
 
 

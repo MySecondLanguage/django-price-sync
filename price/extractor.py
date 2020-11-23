@@ -18,8 +18,9 @@ class ScrapeElgiganten(scraper.Scraper):
 
 class ScrapeTeknikhouse(scraper.Scraper):
     # More details can be found here: https://pypi.org/project/django-easy-scraper/
-    regex_fields = {
-        # 'price': "<meta\sproperty\=\"product\:sale\_price\:amount\"\scontent\=\"(\d+)\"\s\/\>",
-        # 'sku': "<meta\sproperty\=\"product\:retailer\_item\_id\"\scontent\=\"([\d\w]+)\"\/\>",
-        # 'title': "<meta\sproperty\=\"og\:title\"\scontent\=\"([\d\w\s\-\&\%\-\.\+\=\#\@\^\'\"\;\:\d\w]+)\/\>",
+    xpath_fields = {
+        'sku': '/html/head/meta[11]/@content',
     }
+
+    
+# <meta property="product:retailer_item_id" content="SKU1108">
